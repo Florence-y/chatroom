@@ -1,0 +1,50 @@
+package dataPackageClass;
+
+import java.io.Serializable;
+
+/**
+ * 用户类
+ * @author Florence
+ *
+ */
+public class User implements Serializable {
+    private static final long serialVersionUID = 4625916383824095403L;
+    private String Name;
+    private String PassWords;
+    private String Type;
+
+    public User(){
+
+    }
+
+    public User(String Name,String PassWords){
+        this.Name = Name;
+        this.PassWords = PassWords;
+    }
+
+    public String getType() {
+        return Type;
+    }
+
+    public void setType(String type) {
+        Type = type;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getPassWords() {
+        return PassWords;
+    }
+
+    public void setPassWords(String passWords) {
+        PassWords = passWords;
+    }
+
+
+}
